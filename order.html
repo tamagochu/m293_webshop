@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order now</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <header>
+        <h1>˚₊‧꒰ა Pokemon Store ໒꒱ ‧₊˚</h1>
+        <nav>
+          <a href="index.html">Start</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </header>
+      <main>
+  <div class="container">
+    <h1>Order now</h1>
+    <form action="submit_form.php" method="POST">
+      <div class="form-group">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="subject">Product:</label>
+        <select id="subject" name="subject">
+          <option value="altaria">Jumbo Altaria Plush</option>
+          <option value="support">Jumbo Ampharos Plush</option>
+          <option value="feedback">Jumbo Furret Plush</option>
+          <option value="feedback">Snorlax Sleeping Cushion</option>
+          <option value="feedback">Pikachu Snack</option>
+          <option value="feedback">Pokemon Rice Cookie</option>
+          <option value="feedback">Zoroark Figure</option>
+          <option value="feedback">Mew & Mewtwo Figure</option>
+          <option value="feedback">Ghost Types Figure</option>
+          <option value="feedback">Mimikyu Plush</option>
+          <option value="feedback">Banette Plush</option>
+          <option value="feedback">Waltuh Plush</option>
+        </select>
+      </div>
+      <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+    <label for="cardholder">Cardholder's Name:</label>
+    <input type="text" id="cardholder" name="cardholder" required><br><br>
+    
+    <label for="cardnumber">Card Number:</label>
+    <input type="text" id="cardnumber" name="cardnumber" required><br><br>
+    
+    <label for="expiry">Expiry Date:</label>
+    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required><br><br>
+    
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" required><br><br>
+
+      <div class="form-group">
+        <input type="submit" value="Place Order">
+      </div>
+    </form>
+  </div>
+</main>
+<footer>
+  <div class="newsletter">
+      <h2>Subscribe to our Newsletter</h2>
+      <form action="">
+        <input type="email" name="email" placeholder="Enter your email address" required>
+        <input type="submit" value="Subscribe">
+      </form>
+  </div>
+  <p>&copy; 2023 Jessica Vanessa Fürst. Google Switzerland GmbH.</p>
+</footer>
+</body>
+</html>
